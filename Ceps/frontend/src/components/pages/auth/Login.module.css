@@ -1,0 +1,61 @@
+.section {
+    background: rgba(0,0,0,.5);
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 1em 0;
+    border-radius: 5px 5px 0 0;
+    transform: translate(-50%,-50%);
+}
+.section h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.section form div {
+    display: grid;
+    width: 90%;
+    margin: .5em auto 0 auto;
+}
+.section form div label {
+    color: white;
+    font-weight: bold;
+}
+.section form div input {
+    margin-top: .1em;
+    padding: .9em 0 .9em .8em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: rgba(0,0,0,.6);
+    font-size: 1em;
+}
+.section form div input::placeholder {
+    color: #ccc;
+}
+.section form div input:focus {
+    outline: none;
+}
+.section div:nth-child(3) {
+    position: relative;
+}
+.section div:nth-child(4) {
+    position: relative;
+}
+.section div button {
+    margin-top: .8em;
+    height: 2.7em;
+    text-transform: uppercase;
+    background: rgb(6, 226, 116);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.section div button:hover {
+    background: rgb(29, 190, 110);
+}
