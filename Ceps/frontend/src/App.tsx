@@ -6,15 +6,20 @@ import Home from "./components/pages/Home";
 import Login from "./components/pages/auth/Login";
 import NavBar from "./components/layouts/NavBar";
 
+//context
+import { UserProvider } from "./context/UserContext";
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <NavBar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/login" element={<Login/>}/>
-        </Routes>
+        <UserProvider>
+        <NavBar/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/login" element={<Login/>}/>
+          </Routes>
+        </UserProvider>
       </BrowserRouter>
     </div>
   );
